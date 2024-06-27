@@ -15,3 +15,7 @@ test('returns the sum of two numbers', () => {
 test('returns the sum of multiple numbers', () => {
     expect(add("1,2,3,4")).toBe(10);
   });
+
+  test('returns the sum of numbers with new lines', () => {
+    expect(add("1\n2,3")).toBe(6);
+  });
