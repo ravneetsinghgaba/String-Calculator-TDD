@@ -13,7 +13,7 @@ const add = (num) => {
     const negative = numArray.filter(num => num < 0);
 
     if (negative.length > 0){
-        throw new Error(`negative numbers are not allowed: ${negative.join(',')}`);
+        throw new Error(`negative numbers not allowed: ${negative.join(',')}`);
     }
 
     return numArray.reduce((sum, num) => sum + num, 0);
