@@ -3,7 +3,7 @@ const add = (num) => {
     //if(!num.includes(',')) return parseInt(num);
 
     let delimiters = /,|\n/;
-    if (num.startWith('//')){
+    if (num.startsWith('//')){
         const parts = num.split('\n');
         delimiters = new RegExp(parts[0].slice(2));
         num = parts[1];
